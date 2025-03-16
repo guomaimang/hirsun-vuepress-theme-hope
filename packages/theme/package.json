@@ -1,5 +1,5 @@
 {
-  "name": "hirsun-vuepress-theme-hope",
+  "name": "hirsun-vuepress-theme-hope-plus",
   "version": "1.0.0",
   "description": "A light vuepress theme with tons of features and typewriter effect",
   "keywords": [
@@ -12,13 +12,13 @@
     "vuepress-theme-blog",
     "typewriter"
   ],
-  "homepage": "https://github.com/your-username/hirsun-vuepress-theme-hope",
+  "homepage": "https://github.com/your-username/hirsun-vuepress-theme-hope-plus",
   "bugs": {
-    "url": "https://github.com/your-username/hirsun-vuepress-theme-hope/issues"
+    "url": "https://github.com/your-username/hirsun-vuepress-theme-hope-plus/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/hirsun-vuepress-theme-hope.git",
+    "url": "git+https://github.com/your-username/hirsun-vuepress-theme-hope-plus.git",
     "directory": "packages/theme"
   },
   "license": "MIT",

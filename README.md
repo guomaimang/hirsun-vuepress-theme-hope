@@ -1,4 +1,4 @@
-# hirsun-vuepress-theme-hope
+# hirsun-vuepress-theme-hope-plus
 
 > 一个具有打字机效果的Vuepress主题，基于vuepress-theme-hope
 

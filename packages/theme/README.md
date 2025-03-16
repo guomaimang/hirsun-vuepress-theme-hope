@@ -1,4 +1,4 @@
-# hirsun-vuepress-theme-hope
+# hirsun-vuepress-theme-hope-plus
 
 > 一个具有打字机效果的Vuepress主题，基于vuepress-theme-hope
 
@@ -11,11 +11,11 @@
 ## 安装
 
 ```bash
-npm install hirsun-vuepress-theme-hope
+npm install hirsun-vuepress-theme-hope-plus
 # 或者
-yarn add hirsun-vuepress-theme-hope
+yarn add hirsun-vuepress-theme-hope-plus
 # 或者
-pnpm add hirsun-vuepress-theme-hope
+pnpm add hirsun-vuepress-theme-hope-plus
 ```
 
 ## 使用方法
