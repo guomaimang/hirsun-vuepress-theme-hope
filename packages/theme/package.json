@@ -1,7 +1,7 @@
 {
-  "name": "vuepress-theme-hope",
-  "version": "2.0.0-beta.228",
-  "description": "A light vuepress theme with tons of features",
+  "name": "hirsun-vuepress-theme-hope",
+  "version": "1.0.0",
+  "description": "A light vuepress theme with tons of features and typewriter effect",
   "keywords": [
     "vuepress",
     "vuepress2",
@@ -9,22 +9,23 @@
     "vuepress-theme",
     "blog",
     "vuepress-blog",
-    "vuepress-theme-blog"
+    "vuepress-theme-blog",
+    "typewriter"
   ],
-  "homepage": "https://theme-hope.vuejs.press/",
+  "homepage": "https://github.com/your-username/hirsun-vuepress-theme-hope",
   "bugs": {
-    "url": "https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues"
+    "url": "https://github.com/your-username/hirsun-vuepress-theme-hope/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuepress-theme-hope/vuepress-theme-hope.git",
+    "url": "git+https://github.com/your-username/hirsun-vuepress-theme-hope.git",
     "directory": "packages/theme"
   },
   "license": "MIT",
   "author": {
-    "name": "Mr.Hope",
-    "email": "mister-hope@outlook.com",
-    "url": "https://mrhope.site"
+    "name": "Your Name",
+    "email": "your-email@example.com",
+    "url": "https://your-website.com"
   },
   "type": "module",
   "exports": {

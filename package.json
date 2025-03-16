@@ -1,8 +1,8 @@
 {
-  "name": "vuepress-theme-hope-root",
-  "version": "2.0.0-beta.228",
+  "name": "hirsun-vuepress-theme-hope-root",
+  "version": "1.0.0",
   "private": true,
-  "description": "A VuePress theme with tons of features",
+  "description": "A VuePress theme with tons of features and typewriter effect",
   "type": "module",
   "workspaces": [
     "demo/*",
@@ -28,7 +28,6 @@
     "packages:bootstrap": "tsx scripts/bootstrap.ts",
     "packages:check-update": "pnpm dlx npm-check-updates -u --deep --timeout 600000",
     "packages:update": "pnpm up -r",
-    "prepare": "husky install",
     "release": "pnpm clean && pnpm build && pnpm release:bump && pnpm release:publish && pnpm release:sync",
     "release:bump": "bumpp -r --execute=\"pnpm commit-and-tag-version && git add CHANGELOG.md\" --commit \"chore(release): publish v%s\" --all --tag --push",
     "release:publish": "cross-env NODE_OPTIONS=\"--experimental-json-modules\" tsx scripts/release.ts",
@@ -69,7 +68,6 @@
     "execa": "7.1.1",
     "gulp": "4.0.2",
     "http-server": "14.1.1",
-    "husky": "8.0.3",
     "inquirer": "9.2.7",
     "magic-string": "0.30.0",
     "markdownlint-cli": "0.35.0",

@@ -1,25 +1,45 @@
-<!-- markdownlint-disable -->
-<p align="center">
-  <img width="240" src="https://theme-hope.vuejs.press/logo.svg" style="text-align: center;">
-</p>
-<h1 align="center">vuepress-theme-hope</h1>
-<h4 align="center">A VuePress theme with tons of features✨ / 一个具有强大功能的 vuepress 主题✨</h4>
+# hirsun-vuepress-theme-hope
 
-[![Author: Mr.Hope](https://img.shields.io/badge/作者-Mr.Hope-blue.svg?style=for-the-badge)](https://mrhope.site)
-[![License](https://img.shields.io/npm/l/vuepress-theme-hope.svg?style=for-the-badge)](https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/LICENSE)
-[![Open in Visual Studio Code](https://img.shields.io/badge/-open%20in%20vscode-blue?style=for-the-badge&logo=visualstudiocode)](https://open.vscode.dev/vuepress-theme-hope/vuepress-theme-hope)
+> 一个具有打字机效果的Vuepress主题，基于vuepress-theme-hope
 
-<!-- markdownlint-restore -->
+## 特点
 
-[![Version](https://img.shields.io/npm/v/vuepress-theme-hope.svg?style=flat-square&logo=npm) ![Downloads](https://img.shields.io/npm/dm/vuepress-theme-hope.svg?style=flat-square&logo=npm) ![Total downloads](https://img.shields.io/npm/dt/vuepress-theme-hope?style=flat-square&logo=npm)](https://www.npmjs.com/package/vuepress-theme-hope)
+- 包含原vuepress-theme-hope的所有功能
+- 在博客主页增加了打字机效果，支持多行文字轮流显示
+- 支持响应式布局，在各种设备上都能良好显示
 
-[![open-collective](https://opencollective.com/vuepress-theme-hope/tiers/badge.svg)](https://opencollective.com/vuepress-theme-hope)
+## 安装
 
-[![DeepScan grade](https://deepscan.io/api/teams/9792/projects/17544/branches/405512/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9792&pid=17544&bid=405512)
-![CodeQL](https://github.com/vuepress-theme-hope/vuepress-theme-hope/actions/workflows/codeql-analysis.yml/badge.svg)
-[![codecov](https://codecov.io/gh/vuepress-theme-hope/vuepress-theme-hope/branch/main/graph/badge.svg?token=TNYMbGlxQ9)](https://codecov.io/gh/vuepress-theme-hope/vuepress-theme-hope)
-![Test theme](https://github.com/vuepress-theme-hope/vuepress-theme-hope/actions/workflows/main.yml/badge.svg)
+```bash
+npm install hirsun-vuepress-theme-hope
+# 或者
+yarn add hirsun-vuepress-theme-hope
+# 或者
+pnpm add hirsun-vuepress-theme-hope
+```
 
-A VuePress theme with tons of features✨ / 一个具有强大功能的 vuepress 主题 ✨
+## 使用方法
 
-## [English Docs](https://theme-hope.vuejs.press) / [中文文档](https://theme-hope.vuejs.press/zh/)
+### 打字机效果
+
+在博客主页配置文件中添加`heroTexts`数组：
+
+```yaml
+---
+layout: BlogHome
+home: true
+heroImage: /logo.svg
+heroTexts:
+  - "Welcome to My Blog"
+  - "A Place to Share Knowledge"
+  - "Happy Coding!"
+---
+```
+
+## 配置
+
+详细配置与原vuepress-theme-hope主题一致，参考[原主题文档](https://theme-hope.vuejs.press/)。
+
+## 许可证
+
+MIT License
