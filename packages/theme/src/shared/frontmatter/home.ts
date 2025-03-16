@@ -15,6 +15,13 @@ export interface ThemeHopePageFrontmatter extends ThemePageFrontmatter {
   heroAlt?: string;
 
   heroText?: string;
+  
+  /**
+   * Text array for typewriter effect
+   * 
+   * 打字机效果的文字数组
+   */
+  heroTexts?: string[];
 
   tagline?: string;
 

@@ -30,6 +30,13 @@ Page title, will be used in breadcrumb, seo, etc.
 
 Hero Title
 
+## heroTexts
+
+- Type: `string[]`
+- Required: No
+
+Text array for typewriter effect. If provided, it will replace `heroText` with a typewriter animation showing these texts sequentially.
+
 ## tagline
 
 - Type: `string | false`

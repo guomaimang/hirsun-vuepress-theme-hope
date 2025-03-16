@@ -37,6 +37,13 @@ tag:
 
 主页标题
 
+## heroTexts
+
+- 类型: `string[]`
+- 必填: 否
+
+打字机效果的文字数组。如果提供此项，将会替换 `heroText` 并展示一个打字机动画，依次显示这些文字。
+
 ## tagline
 
 - 类型: `string | false`

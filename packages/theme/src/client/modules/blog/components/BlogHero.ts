@@ -8,15 +8,18 @@ import type { SlotsType, VNode } from "vue";
 import { computed, defineComponent, h, shallowRef } from "vue";
 
 import DropTransition from "@theme-hope/components/transitions/DropTransition";
+import TypeWriter from "./TypeWriter.js";
 
 import { SlideDownIcon } from "./icons/icons.js";
 import type { ThemeBlogHomePageFrontmatter } from "../../../../shared/index.js";
 import defaultHeroBgImagePath from "../assets/hero.jpg";
 
 import "../styles/blog-hero.scss";
+import "../styles/type-writer.scss";
 
 export interface HeroInfo {
   text: string | null;
+  texts: string[];
   image: string | null;
   imageDark: string | null;
   heroStyle: string | Record<string, string> | undefined;
@@ -40,7 +43,7 @@ export default defineComponent({
   }>,
 
   setup(_props, { slots }) {
-    const frontmatter = usePageFrontmatter<ThemeBlogHomePageFrontmatter>();
+    const frontmatter = usePageFrontmatter<ThemeBlogHomePageFrontmatter & { heroTexts?: string[] }>();
     const siteLocale = useSiteLocaleData();
 
     const hero = shallowRef<HTMLElement>();
@@ -52,6 +55,7 @@ export default defineComponent({
     const heroInfo = computed(() => {
       const {
         heroText,
+        heroTexts,
         heroImage,
         heroImageDark,
         heroAlt,
@@ -61,6 +65,7 @@ export default defineComponent({
 
       return {
         text: heroText ?? siteLocale.value.title ?? "Hello",
+        texts: heroTexts || [],
         image: heroImage ? withBase(heroImage) : null,
         imageDark: heroImageDark ? withBase(heroImageDark) : null,
         heroStyle: heroImageStyle,
@@ -158,11 +163,17 @@ export default defineComponent({
                 ),
                 h(DropTransition, { appear: true, delay: 0.08 }, () =>
                   heroInfo.value.text
-                    ? h(
-                        "h1",
-                        { class: "vp-blog-hero-title" },
-                        heroInfo.value.text
-                      )
+                    ? heroInfo.value.texts && heroInfo.value.texts.length > 0
+                      ? h(
+                          "h1",
+                          { class: "vp-blog-hero-title" },
+                          h(TypeWriter, { texts: heroInfo.value.texts })
+                        )
+                      : h(
+                          "h1",
+                          { class: "vp-blog-hero-title" },
+                          heroInfo.value.text
+                        )
                     : null
                 ),
                 h(DropTransition, { appear: true, delay: 0.12 }, () =>
