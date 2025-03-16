@@ -1,18 +1,36 @@
 .type-writer {
-  display: inline-block;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  
+  &-content {
+    display: block;
+    text-align: center;
+  }
   
   &-text {
     font-weight: bold;
+    word-break: break-word;
+    white-space: normal;
+    display: inline;
   }
   
   &-cursor {
     display: inline-block;
     width: 3px;
-    height: 1.5em;
+    height: 1.2em;
     background-color: currentColor;
-    margin-left: 2px;
-    vertical-align: text-bottom;
+    margin-left: 1px;
+    vertical-align: middle;
     animation: blink 0.7s infinite;
+    position: relative;
+  }
+}
+
+@media (max-width: 719px) {
+  .type-writer {
+    width: 90%;
   }
 }
 

@@ -87,10 +87,10 @@ export default defineComponent({
       h(
         "div",
         { class: "type-writer" },
-        [
-          h("span", { class: "type-writer-text" }, displayText.value),
+        h("p", { class: "type-writer-content" }, [
+          displayText.value,
           h("span", { class: "type-writer-cursor" })
-        ]
+        ])
       );
   },
 }); 

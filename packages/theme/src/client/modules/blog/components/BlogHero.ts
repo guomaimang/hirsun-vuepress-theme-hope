@@ -166,7 +166,9 @@ export default defineComponent({
                     ? heroInfo.value.texts && heroInfo.value.texts.length > 0
                       ? h(
                           "h1",
-                          { class: "vp-blog-hero-title" },
+                          { 
+                            class: "vp-blog-hero-title typewriter-container",
+                          },
                           h(TypeWriter, { texts: heroInfo.value.texts })
                         )
                       : h(
