@@ -1,55 +1,47 @@
 ---
-home: true
+title: TypeWriter Demo
+icon: laptop-code
 layout: BlogHome
-icon: home
-title: 韩佳明的博客
-bgImage: https://pic.hanjiaming.com.cn/2024/11/10/f33c521629261.jpg
-heroFullScreen: false
-heroText: true
+home: true
+heroImage: /logo.svg
+heroText: Hello
 heroTexts:
   - "Welcome to Theme Hope"
   - "A VuePress Theme with Lots of Features"
   - "Never Stop Exploring"
   - "Keep Learning, Keep Coding"
+bgImage: /assets/image/bg.jpg
+tagline: A Demo for Typewriter effect
 projects:
-  - name: 读书笔记
-    desc: Note for reading
-    link: /category/readnote/
+  - icon: project
+    name: Project name
+    desc: Project detailed description
+    link: https://your.project.link
 
-  - name: 校园生活
-    desc: Campus life
-    link: /category/campus/
+  - icon: link
+    name: Link name
+    desc: Link detailed description
+    link: https://link.address
 
-  - name: 即兴创作
-    desc: Free write
-    link: /category/freecreate/
+  - icon: book
+    name: Book name
+    desc: Detailed description of the book
+    link: https://link.to.your.book
 
-  - name: 我的画廊
-    desc: My Gallery
-    link: /gallery
+  - icon: article
+    name: Article name
+    desc: Detailed description of the article
+    link: https://link.to.your.article
 
-  - name: Tech
-    desc: Note for Tech
-    link: /category/tech/
+  - icon: friend
+    name: Friend name
+    desc: Detailed description of friend
+    link: https://link.to.your.friend
 
-  - name: 研究和项目
-    desc: Research and Project
-    link: https://guomaimang.github.io/research
-
-  - name: 关于我
-    desc: About myself
-    link: /myself.html
-
-  - name: Github Gist
-    desc: Inspiration and code snippets
-    link: https://gist.github.com/guomaimang
-
-footer: <a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备20006728号-1 </a> | Serving since 2011.
+  - icon: /logo.svg
+    name: Custom icon
+    desc: Detailed description of custom icon
+    link: https://link.to.your.friend
 ---
 
-<h6 style="text-align:center">
-Github Page: guomaimang.github.io
-<br />
-Chinese Mainland CDN: hanjiaming.com.cn
-</h6>
-
+This is a demo page showing the typewriter effect in the hero section. 

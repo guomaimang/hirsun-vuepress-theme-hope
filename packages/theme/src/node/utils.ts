@@ -20,5 +20,5 @@ export const TEMPLATE_FOLDER = ensureEndingSlash(
 );
 
 export const VERSION = (<Record<string, unknown> & { version: string }>(
-  createRequire(import.meta.url)("vuepress-theme-hope/package.json")
+  createRequire(import.meta.url)("hirsun-vuepress-theme-hope-plus/package.json")
 )).version;
