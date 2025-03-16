@@ -1,8 +1,6 @@
 # hirsun-vuepress-theme-hope-plus
 
-> 一个具有打字机效果的Vuepress主题，基于vuepress-theme-hope
-
-这是一个fork自[vuepress-theme-hope](https://github.com/vuepress-theme-hope/vuepress-theme-hope)的主题，增加了博客主页的打字机效果功能。
+> Hirsun 基于 vuepress-theme-hope: 2.0.0- beta.228 二次开发的 vuepress 博客主题。
 
 ## 功能特点
 
@@ -13,10 +11,6 @@
 ## 安装和使用
 
 请查看[主题包README](./packages/theme/README.md)获取更多信息。
-
-## 贡献指南
-
-请参考[CONTRIBUTING.md](./CONTRIBUTING.md)。
 
 ## 许可证
 
