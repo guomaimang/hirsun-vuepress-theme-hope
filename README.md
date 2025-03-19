@@ -2,6 +2,8 @@
 
 > Hirsun 基于 vuepress-theme-hope: 2.0.0- beta.228 二次开发的 vuepress 博客主题。
 
+![cover](https://raw.githubusercontent.com/guomaimang/hirsun-vuepress-theme-hope-plus/refs/heads/main/cover.gif)
+
 ## 功能特点
 
 - 保留了原主题的所有功能
